@@ -1,7 +1,6 @@
 #We will import the Mammal class, which inheritor the Animal class.
 #we will use some of the methods that already exist in it, to avoid code duplication, because a Cat is a type of Mammal.
 #Some of the methods will be overridden and implemented here according to the entity's need.
-#This is an abstract class. Talking about a general product.
 from hw5.Mammal import Mammal
 
 class Cat(Mammal):
