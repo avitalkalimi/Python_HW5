@@ -1,3 +1,5 @@
+#This is an abstract class. Talking about a general Animal.
+
 class Animal:
     #The animal constructor, produces a new animal according to the parameters it receives
     #It must accept all parameters, and it has conditions
