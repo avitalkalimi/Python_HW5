@@ -13,7 +13,7 @@ class Bird(Animal):
         Animal.__init__(self, nick_name, price, power, type)
         self.fly = False
 
-    ##comparison method for birds
+    #comparison method for birds
      def __ge__(self, other):
          if not isinstance(other, Animal):
              return False
