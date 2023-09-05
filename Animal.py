@@ -1,4 +1,6 @@
 class Animal:
+    #The animal constructor, produces a new animal according to the parameters it receives
+    #It must accept all parameters, and it has conditions
     def __init__(self, nick_name, price, power, type):
         if price <= 0:
             raise ValueError()
