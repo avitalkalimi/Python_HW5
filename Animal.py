@@ -9,25 +9,31 @@ class Animal:
         self.__power = float(power)
         self.type = type
 
+    #The printing method that works when printing the animal
     def __repr__(self):
         return "Name: " + str(self.nick_name) + ", Price: " + str(float(self.price)) + " NIS, Power: " + str(
             float(self.__power))
 
+    #method that returns what the animal's power is
     def _get__power(self):
         return self.__power
 
+    #method that updates a new power for the animal. manage according to the access permissions!
     def _set__power(self, new_power):
         if 0 < new_power <= 100:
             self.__power = float(new_power)
             return self.__power
         return self.__power
 
+    #method that announces the victory of the animal
     def win(self):
         return self.nick_name + " winner"
 
+    #method that announces the loss of the animal
     def loss(self):
         return self.nick_name + " loser"
-
+    
+    #comparison method that checks for greater than or equal to
     def __ge__(self, other):
         if not isinstance(other, Animal):
             return False
@@ -37,6 +43,7 @@ class Animal:
         else:
             return False
 
+    #comparison method that tests equality
     def __eq__(self, other):
         if not isinstance(other, Animal):
             return False
@@ -46,5 +53,6 @@ class Animal:
         else:
             return False
 
+    #method that returns the type of the animal
     def get_type(self):
         return self.type
